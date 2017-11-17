@@ -54,8 +54,7 @@
 		<div class="pull-left">
 		<img src="logos/deca_logo.jpg" alt="Deca logo" id="deca_logo" class="img-responsive">
 		</div>
-
-	<footer>&copy; 2017 Francis Tuttle Technology Center</footer>
+<?php include './includes/footer.php'?>
 	<!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
