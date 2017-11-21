@@ -446,6 +446,8 @@ template {
   display: none;
 }
 
+
+
 body{
   background-color: #F1F1F1;
   color: #3e1151;
@@ -463,149 +465,108 @@ div.banner{
   width: 100%;
 }
 
+
+
 #FTTC_logo, #main_logo{margin-top: 25px;}
 
-
-nav ul{
+.left {
+  position: fixed;
+  top: 0;
+  left: 0;
   background-color: #3e1151;
-  border: 5px solid #8e9090;
-  display: block;
-  font-size: 2em; 
-  text-transform: uppercase;
-  width:100%;
-
+  text-align: left;
+  width: 170px;
+  padding: 50px 10px;
+  height: 100%;
 }
 
-nav ul li{ 
-  list-style-type: none; 
-  margin: 0;
-  padding-top: 1em; 
-  padding-bottom: 1em;
-  text-align: center;
-}
-
-nav ul li a{
-  color: #fff;
-}
-
-nav ul li a:hover{
-  color: #3e1151; 
-  background-color: #f1f1f1;
-  text-decoration: none; display: block;
-}
-
-section{text-align: center;}
-
-section h1{text-align: center;}
-
-#child1, #child2{
-  border: 8px solid #3e1151; 
-  height: 400px;
-  margin-bottom: 1em; 
-  width: 300px;
-}
-
-#bpa_logo, #deca_logo{
-  border: 3px solid #3e1151;
-  margin-bottom: 1em;
-  width: 300px;
-}
-
-footer{
-  background-color: #3e1151;
-  border-top: 5px solid #8e9090;
-  color: #fff;
-  font-size: 1.35em;
-  float: left;
-  clear: left;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
-
-}
-
-/*===MEDIA QUERIES===*/
-
-@media  only screen and (min-width: 992px){
+ul {
+    margin: 0;
+    padding: 0;
+  }
   
-.banner{
-  background-color: #3e1151;
-  border-bottom: 5px solid #8e9090;
-  padding: 1em;
+li {
+      list-style: none;
+    }
+    
+  a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 2em;
+        display: block;
+        padding: 5px 10px;
+      }
 
+  a:hover{
+        background-color: #fff; 
+        color: #3e1151; 
+        text-decoration: none; 
+        transition: background-color 2s;
+      }
+
+.col-xs-12{text-align: center;}
+
+
+
+#child1.img-responsive.img-thumbnail, #child2.img-responsive.img-thumbnail{
+	border: 3px solid #3e1151;
+	margin-top: 1em; 
+	width: 300px; height: 400px;
 }
 
-#FTTC_logo, #main_logo{margin: auto; margin-top: 25px;}
-
-nav ul{
-  background-color: #3e1151;
-  border: 5px solid #8e9090;
-  font-size: 2em;
-  float: left;  
-  height: 900px;
-  margin-left: 2em;
-  padding: 30px 15px 5px 0px;
-  position: relative;
-  bottom: 500px;  
-  text-transform: uppercase;
-  width: 300px;
-
-}
-
-nav ul li{ 
-  list-style-type: none; 
-  margin: 0; 
-  padding-bottom: 1em;
-  text-align: right;
-}
-
-nav ul li a{
-  color: #fff;
-}
-
-nav ul li a:hover{
-  color: #3e1151; 
-  background-color: #f1f1f1;
-  padding-right: 5px; 
-  text-decoration: none;
-}
-
-section{float: left; margin-left: 3em; text-align: justify;}
-
-#child1, #child2{
-  border: 8px solid #3e1151;
-  float: left; 
-  margin-left: 10em; 
-  height: 400px; 
-  width: 300px;
-}
 
 #bpa_logo, #deca_logo{
-  border: 3px solid #3e1151;
-  height: 99px;
-  margin-left: 3em;
-  position: relative;
-  bottom: 550px;
-  left: 370px;
-  width: 200px;
+	border: 3px solid #3e1151;
+	margin-top: 1em;
+	margin-left: 1em;
+	height: 88px;
+	width: 99px;
 }
 
 footer{
-  background-color: #3e1151;
-  border-top: 5px solid #8e9090;
-  color: #fff;
-  font-size: 1.35em;
-  float: left;
-  clear: left;
-  padding: 1em;
-  text-align: center;
-  width: 100%;
+	background-color: #3e1151;
+	border-top: 5px solid #8e9090;
+	color: #fff;
+	float: left;
+	clear: both;
+	padding: 1em;
+	text-align: center;
+	width: 100%;
 
+}
+
+/*======MEDIA QUERIES======*/
+
+  @media only screen and (min-width: 768px) and (max-width: 1024px){
+    
+    #FTTC_logo, #main_logo{margin: auto; position: relative; left: 200px;}
+    
+    section{margin: auto; position: relative; left: 200px; text-align: left;}
+    
+    #child1.img-responsive.img-thumbnail, #child2.img-responsive.img-thumbnail{margin: auto; position: relative; left: 200px;}
+    
+    #bpa_logo, #deca_logo{
+      position: relative; left: 200px;
+}
+
+
+  }
+
+  @media only screen and (min-width: 1440px){
+    .left{float: left;}
+    section{float: left; position: relative; left: 200px; text-align: justify;}
+    
+    #FTTC_logo, #main_logo{margin: auto; position: relative; left: 500px;}
+    
+    #child1.img-responsive.img-thumbnail, #child2.img-responsive.img-thumbnail{float: left; position: relative; left: 700px; bottom: 500px; margin-right: 2em;}
+        
+    #bpa_logo, #deca_logo{position: relative; left: 200px; bottom: 400px;}
 }
 
 }
 
-
+/*=========================*/
   
 
 
